@@ -3,6 +3,8 @@
 % для ненумерованного списка 
 \usepackage{enumitem}
 \setlist[itemize,1]{label=--}
+\setlist[enumerate,1]{label=\arabic*)}
+
 % hard table
 \usepackage{threeparttable}
 
@@ -19,16 +21,8 @@
 \usepackage{csvsimple}
 \usepackage{graphicx}  % Для поддержки широкого спектра графических форматов
 
-\usepackage[notransparent]{svg}
-\usepackage[justification=centering]{caption}
 
-\newcommand {\inputsvg}[2]{
-	\begin{figure}[H]
-		\centering
-		\includesvg{[width=\textwidth]{inc/img/#1}}
-		\caption{#2}
-		\label{img:#1}
-	\end{figure}
-}
+
+
 
 
